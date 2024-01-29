@@ -25,3 +25,8 @@ kelvin.oninput = function () {
     let c = parseFloat(kelvin.value) - 273.15;
     celsius.value = parseFloat(c.toFixed(2));
 }
+
+// Disable context menu on the entire document
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
